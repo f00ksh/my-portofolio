@@ -1,14 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:fouda_portfolio/routes/app_routes.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 void main() {
-  runApp(const PortfolioApp());
+  runApp(
+    const ProviderScope(
+      child: PortfolioApp(),
+    ),
+  );
 }
 
 class PortfolioApp extends StatelessWidget {
   const PortfolioApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(

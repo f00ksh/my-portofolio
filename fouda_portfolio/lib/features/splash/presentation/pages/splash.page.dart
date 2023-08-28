@@ -6,6 +6,7 @@ import 'package:fouda_portfolio/styles/colors.dart';
 import 'package:go_router/go_router.dart';
 
 class SplashPage extends StatelessWidget {
+  // route name
   static const String route = '/splash';
   const SplashPage({super.key});
 

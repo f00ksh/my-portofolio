@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:fouda_portfolio/features/github/presentation/pages/github.page.dart';
+import 'package:fouda_portfolio/features/linkedin/presentaion/pages/linkedin.page.dart';
+import 'package:fouda_portfolio/features/twitter/presentaion/pages/twitter.page.dart';
+import 'package:fouda_portfolio/features/web/presentaion/pages/web.page.dart';
+import 'package:fouda_portfolio/features/welcome/presentaion/pages/welcome.page.dart';
 
 class PersonalPortfolioColors {
   // for the dark theme
@@ -15,9 +20,9 @@ class PersonalPortfolioColors {
   // * per page
 
   // welcome
-  static const Color welcomeIcon = Color(0xFFFFF1BF);
-  static const Color welcomePrimary = Color(0xFFF2C41C);
-  static const Color welcomeSecondary = Color(0xE76B4E00);
+  static const Color welcomeIcon = Color.fromARGB(255, 255, 191, 197);
+  static const Color welcomePrimary = Color.fromARGB(255, 242, 28, 89);
+  static const Color welcomeSecondary = Color.fromARGB(231, 107, 0, 20);
 
   // twitter:
 
@@ -37,6 +42,49 @@ class PersonalPortfolioColors {
 
   // github
   static const Color githubIcon = Color(0xFFBEBEBE);
-  static const Color githubPrimary = Color(0xFF6C6C6C);
-  static const Color githubSecondary = Color(0xFF3B3B3B);
+  static const Color githubPrimary = Color.fromARGB(255, 87, 87, 87);
+  static const Color githubSecondary = Color.fromARGB(255, 46, 46, 46);
+
+  static Map<String, LinearGradient> pageColor = {
+    WelcomePage.route: const LinearGradient(
+      colors: [
+        PersonalPortfolioColors.welcomePrimary,
+        PersonalPortfolioColors.welcomeSecondary
+      ],
+      begin: Alignment.topCenter,
+      end: Alignment.bottomCenter,
+    ),
+    TwitterPage.route: const LinearGradient(
+      colors: [
+        PersonalPortfolioColors.twitterPrimary,
+        PersonalPortfolioColors.twitterSecondary
+      ],
+      begin: Alignment.topCenter,
+      end: Alignment.bottomCenter,
+    ),
+    LinkedInPage.route: const LinearGradient(
+      colors: [
+        PersonalPortfolioColors.linkedInPrimary,
+        PersonalPortfolioColors.linkedInSecondary
+      ],
+      begin: Alignment.topCenter,
+      end: Alignment.bottomCenter,
+    ),
+    WebPage.route: const LinearGradient(
+      colors: [
+        PersonalPortfolioColors.webPrimary,
+        PersonalPortfolioColors.webSecondary
+      ],
+      begin: Alignment.topCenter,
+      end: Alignment.bottomCenter,
+    ),
+    GithubPage.route: const LinearGradient(
+      colors: [
+        PersonalPortfolioColors.githubPrimary,
+        PersonalPortfolioColors.githubSecondary
+      ],
+      begin: Alignment.topCenter,
+      end: Alignment.bottomCenter,
+    )
+  };
 }
