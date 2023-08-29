@@ -11,10 +11,9 @@ class MockLinkedinRepository implements ILinkedInRepository {
         // return Future.error('Error retrieving the welcome page data');
         return const LinkedinPageModel(
             icon: PersonalPortfolioIcons.linkedin,
-            title: 'Lets',
-            subTitle: 'connect',
-            handle: 'on Linkedin',
-            url: '');
+            title: 'Lets\nConnect',
+            subTitle: 'on Linkedin',
+            url: 'https://www.linkedin.com/in/mhmd-fouda-b1a515b6/');
       },
     );
   }

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:fouda_portfolio/features/navigation/data/models/left_navigation_item.dart';
-import 'package:fouda_portfolio/features/navigation/presentation/viewmodels/left.navigation.viewmodel.dart';
+import 'package:fouda_portfolio/features/navigation/presentation/providers/navigation_providers.dart';
 
 class LeftNavigationItemTile extends ConsumerWidget {
   final LeftNavigationItem item;
@@ -28,7 +28,7 @@ class LeftNavigationItemTile extends ConsumerWidget {
               ),
               onPressed: () {
                 ref
-                    .read(leftNavigationViewModelProvider.notifier)
+                    .read(navigationItemsViewModelProvider.notifier)
                     .selectNavItem(item);
               }),
         ),

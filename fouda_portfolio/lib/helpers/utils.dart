@@ -8,8 +8,11 @@ import 'package:fouda_portfolio/helpers/enums.dart';
 
 class Utils {
   static GlobalKey<NavigatorState> mainNav = GlobalKey();
+
   static GlobalKey<NavigatorState> tabNav = GlobalKey();
+
   static GlobalKey<ScaffoldState> mainScaffold = GlobalKey();
+
   static Map<String, BackgroundAnimations> pageRouteToAnimations = {
     WelcomePage.route: BackgroundAnimations.welcome,
     TwitterPage.route: BackgroundAnimations.twitter,

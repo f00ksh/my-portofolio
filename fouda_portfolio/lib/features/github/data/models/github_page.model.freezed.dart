@@ -19,7 +19,6 @@ mixin _$GithubPageModel {
   IconData get icon => throw _privateConstructorUsedError;
   String get title => throw _privateConstructorUsedError;
   String get subTitle => throw _privateConstructorUsedError;
-  String get handle => throw _privateConstructorUsedError;
   String get url => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
@@ -33,12 +32,7 @@ abstract class $GithubPageModelCopyWith<$Res> {
           GithubPageModel value, $Res Function(GithubPageModel) then) =
       _$GithubPageModelCopyWithImpl<$Res, GithubPageModel>;
   @useResult
-  $Res call(
-      {IconData icon,
-      String title,
-      String subTitle,
-      String handle,
-      String url});
+  $Res call({IconData icon, String title, String subTitle, String url});
 }
 
 /// @nodoc
@@ -57,7 +51,6 @@ class _$GithubPageModelCopyWithImpl<$Res, $Val extends GithubPageModel>
     Object? icon = null,
     Object? title = null,
     Object? subTitle = null,
-    Object? handle = null,
     Object? url = null,
   }) {
     return _then(_value.copyWith(
@@ -72,10 +65,6 @@ class _$GithubPageModelCopyWithImpl<$Res, $Val extends GithubPageModel>
       subTitle: null == subTitle
           ? _value.subTitle
           : subTitle // ignore: cast_nullable_to_non_nullable
-              as String,
-      handle: null == handle
-          ? _value.handle
-          : handle // ignore: cast_nullable_to_non_nullable
               as String,
       url: null == url
           ? _value.url
@@ -93,12 +82,7 @@ abstract class _$$_GithubPageModelCopyWith<$Res>
       __$$_GithubPageModelCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call(
-      {IconData icon,
-      String title,
-      String subTitle,
-      String handle,
-      String url});
+  $Res call({IconData icon, String title, String subTitle, String url});
 }
 
 /// @nodoc
@@ -115,7 +99,6 @@ class __$$_GithubPageModelCopyWithImpl<$Res>
     Object? icon = null,
     Object? title = null,
     Object? subTitle = null,
-    Object? handle = null,
     Object? url = null,
   }) {
     return _then(_$_GithubPageModel(
@@ -131,10 +114,6 @@ class __$$_GithubPageModelCopyWithImpl<$Res>
           ? _value.subTitle
           : subTitle // ignore: cast_nullable_to_non_nullable
               as String,
-      handle: null == handle
-          ? _value.handle
-          : handle // ignore: cast_nullable_to_non_nullable
-              as String,
       url: null == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
@@ -145,13 +124,13 @@ class __$$_GithubPageModelCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_GithubPageModel implements _GithubPageModel {
+class _$_GithubPageModel extends _GithubPageModel {
   const _$_GithubPageModel(
       {required this.icon,
       required this.title,
       required this.subTitle,
-      required this.handle,
-      required this.url});
+      required this.url})
+      : super._();
 
   @override
   final IconData icon;
@@ -160,13 +139,11 @@ class _$_GithubPageModel implements _GithubPageModel {
   @override
   final String subTitle;
   @override
-  final String handle;
-  @override
   final String url;
 
   @override
   String toString() {
-    return 'GithubPageModel(icon: $icon, title: $title, subTitle: $subTitle, handle: $handle, url: $url)';
+    return 'GithubPageModel(icon: $icon, title: $title, subTitle: $subTitle, url: $url)';
   }
 
   @override
@@ -178,13 +155,11 @@ class _$_GithubPageModel implements _GithubPageModel {
             (identical(other.title, title) || other.title == title) &&
             (identical(other.subTitle, subTitle) ||
                 other.subTitle == subTitle) &&
-            (identical(other.handle, handle) || other.handle == handle) &&
             (identical(other.url, url) || other.url == url));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, icon, title, subTitle, handle, url);
+  int get hashCode => Object.hash(runtimeType, icon, title, subTitle, url);
 
   @JsonKey(ignore: true)
   @override
@@ -193,13 +168,13 @@ class _$_GithubPageModel implements _GithubPageModel {
       __$$_GithubPageModelCopyWithImpl<_$_GithubPageModel>(this, _$identity);
 }
 
-abstract class _GithubPageModel implements GithubPageModel {
+abstract class _GithubPageModel extends GithubPageModel {
   const factory _GithubPageModel(
       {required final IconData icon,
       required final String title,
       required final String subTitle,
-      required final String handle,
       required final String url}) = _$_GithubPageModel;
+  const _GithubPageModel._() : super._();
 
   @override
   IconData get icon;
@@ -207,8 +182,6 @@ abstract class _GithubPageModel implements GithubPageModel {
   String get title;
   @override
   String get subTitle;
-  @override
-  String get handle;
   @override
   String get url;
   @override

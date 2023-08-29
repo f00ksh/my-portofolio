@@ -20,6 +20,9 @@ dependencies:
   json_annotation: ^4.8.1
   flutter_animate: ^4.2.0+1
   rive: ^0.11.14
+  firebase_core: ^2.15.1
+  cloud_firestore: ^4.9.0
+  shared_preferences: ^2.2.0
 
 dev_dependencies:
   flutter_test:

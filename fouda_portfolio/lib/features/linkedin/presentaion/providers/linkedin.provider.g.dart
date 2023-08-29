@@ -7,7 +7,7 @@ part of 'linkedin.provider.dart';
 // **************************************************************************
 
 String _$linkedinRepositoryHash() =>
-    r'0513a09afb9577304b7d25b9854379c47e353a39';
+    r'7072d525e3f87ce52f467fc40be6f1b623e3ddcd';
 
 /// See also [linkedinRepository].
 @ProviderFor(linkedinRepository)

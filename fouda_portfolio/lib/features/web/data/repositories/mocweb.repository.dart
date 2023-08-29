@@ -11,10 +11,9 @@ class MockWebRepository implements IWebRepository {
         // return Future.error('Error retrieving the welcome page data');
         return const WebPageModel(
             icon: PersonalPortfolioIcons.web,
-            title: 'Visit',
-            subTitle: 'My Page',
-            handle: '@mhmdfouda',
-            url: '');
+            title: 'Visit\nMy Page',
+            subTitle: 'Mhmd Fouad',
+            url: 'www.mhmdfouda.com');
       },
     );
   }

@@ -6,7 +6,7 @@ part of 'web.provider.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$webRepositoryHash() => r'e6e578e6b224773deed44b5cb354b5a3de2d4af4';
+String _$webRepositoryHash() => r'c2f1ea410fa7617724d5360d398719e3772f2b88';
 
 /// See also [webRepository].
 @ProviderFor(webRepository)

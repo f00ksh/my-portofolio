@@ -145,14 +145,15 @@ class __$$_WelcomePageModelCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_WelcomePageModel implements _WelcomePageModel {
+class _$_WelcomePageModel extends _WelcomePageModel {
   const _$_WelcomePageModel(
       {required this.name,
       required this.title,
       required this.subTitle,
       required this.imgPath,
       required final List<String> greetings})
-      : _greetings = greetings;
+      : _greetings = greetings,
+        super._();
 
   @override
   final String name;
@@ -200,13 +201,14 @@ class _$_WelcomePageModel implements _WelcomePageModel {
       __$$_WelcomePageModelCopyWithImpl<_$_WelcomePageModel>(this, _$identity);
 }
 
-abstract class _WelcomePageModel implements WelcomePageModel {
+abstract class _WelcomePageModel extends WelcomePageModel {
   const factory _WelcomePageModel(
       {required final String name,
       required final String title,
       required final String subTitle,
       required final String imgPath,
       required final List<String> greetings}) = _$_WelcomePageModel;
+  const _WelcomePageModel._() : super._();
 
   @override
   String get name;

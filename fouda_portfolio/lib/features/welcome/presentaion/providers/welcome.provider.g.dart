@@ -6,7 +6,7 @@ part of 'welcome.provider.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$welcomeRepositoryHash() => r'0b1e61b9f67c6ef768cf2a5f3afbe0f42d2cd392';
+String _$welcomeRepositoryHash() => r'30d34443444c7a2cce7cf0e96efe2814768e3514';
 
 /// See also [welcomeRepository].
 @ProviderFor(welcomeRepository)

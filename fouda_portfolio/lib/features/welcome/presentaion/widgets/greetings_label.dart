@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:fouda_portfolio/features/welcome/presentaion/responsiveness/welcome_page_responsive.config.dart';
 import 'package:fouda_portfolio/features/welcome/presentaion/viewmodels/greetings_label.viewmodel.dart';
+import 'package:fouda_portfolio/helpers/responsive_ui_helper.dart';
 
 class GreetingsLabel extends ConsumerStatefulWidget {
   const GreetingsLabel({super.key});
@@ -26,10 +28,17 @@ class GreetingsLabelState extends ConsumerState<GreetingsLabel> {
 
   @override
   Widget build(BuildContext context) {
+    var uiConfig = WelcomePageResponsiveConfig
+        .responsiveUI[ResponsiveUIHelper.getDeviceType(context)]!;
     final greeting = ref.watch(greetingsViewModelProvider);
 
-    return Text(greeting,
-        style: const TextStyle(
-            fontSize: 100, fontWeight: FontWeight.bold, color: Colors.white));
+    return Text(
+      greeting,
+      style: TextStyle(
+        fontSize: uiConfig.titleSize,
+        fontWeight: FontWeight.bold,
+        color: Colors.white,
+      ),
+    );
   }
 }

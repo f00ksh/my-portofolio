@@ -145,13 +145,14 @@ class __$$_TwitterPageModelCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_TwitterPageModel implements _TwitterPageModel {
+class _$_TwitterPageModel extends _TwitterPageModel {
   const _$_TwitterPageModel(
       {required this.icon,
       required this.title,
       required this.subTitle,
       required this.handle,
-      required this.url});
+      required this.url})
+      : super._();
 
   @override
   final IconData icon;
@@ -193,13 +194,14 @@ class _$_TwitterPageModel implements _TwitterPageModel {
       __$$_TwitterPageModelCopyWithImpl<_$_TwitterPageModel>(this, _$identity);
 }
 
-abstract class _TwitterPageModel implements TwitterPageModel {
+abstract class _TwitterPageModel extends TwitterPageModel {
   const factory _TwitterPageModel(
       {required final IconData icon,
       required final String title,
       required final String subTitle,
       required final String handle,
       required final String url}) = _$_TwitterPageModel;
+  const _TwitterPageModel._() : super._();
 
   @override
   IconData get icon;

@@ -6,7 +6,7 @@ part of 'twitter.provider.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$twitterRepositoryHash() => r'28d60c6148d033914e6af47651f2b360197f6c80';
+String _$twitterRepositoryHash() => r'3e2ef9e6892ce0541804a6ae6ab9c9cdf4af8e2c';
 
 /// See also [twitterRepository].
 @ProviderFor(twitterRepository)

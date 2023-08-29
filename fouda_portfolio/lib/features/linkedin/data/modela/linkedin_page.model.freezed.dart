@@ -19,7 +19,6 @@ mixin _$LinkedinPageModel {
   IconData get icon => throw _privateConstructorUsedError;
   String get title => throw _privateConstructorUsedError;
   String get subTitle => throw _privateConstructorUsedError;
-  String get handle => throw _privateConstructorUsedError;
   String get url => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
@@ -33,12 +32,7 @@ abstract class $LinkedinPageModelCopyWith<$Res> {
           LinkedinPageModel value, $Res Function(LinkedinPageModel) then) =
       _$LinkedinPageModelCopyWithImpl<$Res, LinkedinPageModel>;
   @useResult
-  $Res call(
-      {IconData icon,
-      String title,
-      String subTitle,
-      String handle,
-      String url});
+  $Res call({IconData icon, String title, String subTitle, String url});
 }
 
 /// @nodoc
@@ -57,7 +51,6 @@ class _$LinkedinPageModelCopyWithImpl<$Res, $Val extends LinkedinPageModel>
     Object? icon = null,
     Object? title = null,
     Object? subTitle = null,
-    Object? handle = null,
     Object? url = null,
   }) {
     return _then(_value.copyWith(
@@ -72,10 +65,6 @@ class _$LinkedinPageModelCopyWithImpl<$Res, $Val extends LinkedinPageModel>
       subTitle: null == subTitle
           ? _value.subTitle
           : subTitle // ignore: cast_nullable_to_non_nullable
-              as String,
-      handle: null == handle
-          ? _value.handle
-          : handle // ignore: cast_nullable_to_non_nullable
               as String,
       url: null == url
           ? _value.url
@@ -93,12 +82,7 @@ abstract class _$$_LinkedinPageModelCopyWith<$Res>
       __$$_LinkedinPageModelCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call(
-      {IconData icon,
-      String title,
-      String subTitle,
-      String handle,
-      String url});
+  $Res call({IconData icon, String title, String subTitle, String url});
 }
 
 /// @nodoc
@@ -115,7 +99,6 @@ class __$$_LinkedinPageModelCopyWithImpl<$Res>
     Object? icon = null,
     Object? title = null,
     Object? subTitle = null,
-    Object? handle = null,
     Object? url = null,
   }) {
     return _then(_$_LinkedinPageModel(
@@ -131,10 +114,6 @@ class __$$_LinkedinPageModelCopyWithImpl<$Res>
           ? _value.subTitle
           : subTitle // ignore: cast_nullable_to_non_nullable
               as String,
-      handle: null == handle
-          ? _value.handle
-          : handle // ignore: cast_nullable_to_non_nullable
-              as String,
       url: null == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
@@ -145,13 +124,13 @@ class __$$_LinkedinPageModelCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_LinkedinPageModel implements _LinkedinPageModel {
+class _$_LinkedinPageModel extends _LinkedinPageModel {
   const _$_LinkedinPageModel(
       {required this.icon,
       required this.title,
       required this.subTitle,
-      required this.handle,
-      required this.url});
+      required this.url})
+      : super._();
 
   @override
   final IconData icon;
@@ -160,13 +139,11 @@ class _$_LinkedinPageModel implements _LinkedinPageModel {
   @override
   final String subTitle;
   @override
-  final String handle;
-  @override
   final String url;
 
   @override
   String toString() {
-    return 'LinkedinPageModel(icon: $icon, title: $title, subTitle: $subTitle, handle: $handle, url: $url)';
+    return 'LinkedinPageModel(icon: $icon, title: $title, subTitle: $subTitle, url: $url)';
   }
 
   @override
@@ -178,13 +155,11 @@ class _$_LinkedinPageModel implements _LinkedinPageModel {
             (identical(other.title, title) || other.title == title) &&
             (identical(other.subTitle, subTitle) ||
                 other.subTitle == subTitle) &&
-            (identical(other.handle, handle) || other.handle == handle) &&
             (identical(other.url, url) || other.url == url));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, icon, title, subTitle, handle, url);
+  int get hashCode => Object.hash(runtimeType, icon, title, subTitle, url);
 
   @JsonKey(ignore: true)
   @override
@@ -194,13 +169,13 @@ class _$_LinkedinPageModel implements _LinkedinPageModel {
           this, _$identity);
 }
 
-abstract class _LinkedinPageModel implements LinkedinPageModel {
+abstract class _LinkedinPageModel extends LinkedinPageModel {
   const factory _LinkedinPageModel(
       {required final IconData icon,
       required final String title,
       required final String subTitle,
-      required final String handle,
       required final String url}) = _$_LinkedinPageModel;
+  const _LinkedinPageModel._() : super._();
 
   @override
   IconData get icon;
@@ -208,8 +183,6 @@ abstract class _LinkedinPageModel implements LinkedinPageModel {
   String get title;
   @override
   String get subTitle;
-  @override
-  String get handle;
   @override
   String get url;
   @override

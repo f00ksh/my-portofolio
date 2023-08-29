@@ -12,7 +12,7 @@ class ErrorNotification extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          const Icon(Icons.warning, color: Colors.white, size: 80),
+          const Icon(Icons.warning, color: Colors.white, size: 120),
           const SizedBox(height: 20),
           ConstrainedBox(
               constraints: const BoxConstraints(maxWidth: 300),

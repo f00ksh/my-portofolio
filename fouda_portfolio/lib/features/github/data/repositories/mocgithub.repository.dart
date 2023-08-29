@@ -11,10 +11,9 @@ class MockGithubRepository implements IGithubRepository {
         // return Future.error('Error retrieving the welcome page data');
         return const GithubPageModel(
             icon: PersonalPortfolioIcons.github,
-            title: 'Check out',
-            subTitle: 'My Repos',
-            handle: 'on Github',
-            url: '');
+            title: 'Check out\nMy Repos',
+            subTitle: 'on Github',
+            url: 'https://github.com/MhmdFouda');
       },
     );
   }

@@ -1,5 +1,5 @@
 import 'package:fouda_portfolio/features/welcome/data/repositories/iwelcome.repository.dart';
-import 'package:fouda_portfolio/features/welcome/data/repositories/mocwelcome.repository.dart';
+import 'package:fouda_portfolio/features/welcome/data/repositories/welcome.repository.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'welcome.provider.g.dart';
@@ -8,7 +8,7 @@ part 'welcome.provider.g.dart';
 // used in welcome.viewwmodel
 @riverpod
 IWelcomeRepository welcomeRepository(WelcomeRepositoryRef ref) {
-  return MockWelcomeRepository();
+  return WelcomeRepository(ref);
 }
 
 // provider for GreetingsList
