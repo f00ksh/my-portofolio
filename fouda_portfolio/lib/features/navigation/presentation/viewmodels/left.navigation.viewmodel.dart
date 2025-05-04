@@ -15,7 +15,6 @@ class LeftNavigationViewModel extends StateNotifier<List<LeftNavigationItem>> {
 
   void init() {
     var selectedNavRoute = ref.read(webLocalStorageProvider).getSelectedNav();
-
     if (selectedNavRoute.isNotEmpty) {
       var item = state.where((i) => i.route == selectedNavRoute).first;
       selectNavItem(item);

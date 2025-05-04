@@ -1,3 +1,4 @@
+// dart format width=80
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
@@ -9,89 +10,53 @@ part of 'welcome_page.model.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$WelcomePageModel {
-  String get name => throw _privateConstructorUsedError;
-  String get title => throw _privateConstructorUsedError;
-  String get subTitle => throw _privateConstructorUsedError;
-  String get imgPath => throw _privateConstructorUsedError;
-  List<String> get greetings => throw _privateConstructorUsedError;
+  String get name;
+  String get title;
+  String get subTitle;
+  String get imgPath;
+  List<String> get greetings;
 
-  @JsonKey(ignore: true)
-  $WelcomePageModelCopyWith<WelcomePageModel> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $WelcomePageModelCopyWith<$Res> {
-  factory $WelcomePageModelCopyWith(
-          WelcomePageModel value, $Res Function(WelcomePageModel) then) =
-      _$WelcomePageModelCopyWithImpl<$Res, WelcomePageModel>;
-  @useResult
-  $Res call(
-      {String name,
-      String title,
-      String subTitle,
-      String imgPath,
-      List<String> greetings});
-}
-
-/// @nodoc
-class _$WelcomePageModelCopyWithImpl<$Res, $Val extends WelcomePageModel>
-    implements $WelcomePageModelCopyWith<$Res> {
-  _$WelcomePageModelCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
+  /// Create a copy of WelcomePageModel
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @pragma('vm:prefer-inline')
+  $WelcomePageModelCopyWith<WelcomePageModel> get copyWith =>
+      _$WelcomePageModelCopyWithImpl<WelcomePageModel>(
+          this as WelcomePageModel, _$identity);
+
   @override
-  $Res call({
-    Object? name = null,
-    Object? title = null,
-    Object? subTitle = null,
-    Object? imgPath = null,
-    Object? greetings = null,
-  }) {
-    return _then(_value.copyWith(
-      name: null == name
-          ? _value.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String,
-      title: null == title
-          ? _value.title
-          : title // ignore: cast_nullable_to_non_nullable
-              as String,
-      subTitle: null == subTitle
-          ? _value.subTitle
-          : subTitle // ignore: cast_nullable_to_non_nullable
-              as String,
-      imgPath: null == imgPath
-          ? _value.imgPath
-          : imgPath // ignore: cast_nullable_to_non_nullable
-              as String,
-      greetings: null == greetings
-          ? _value.greetings
-          : greetings // ignore: cast_nullable_to_non_nullable
-              as List<String>,
-    ) as $Val);
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is WelcomePageModel &&
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.title, title) || other.title == title) &&
+            (identical(other.subTitle, subTitle) ||
+                other.subTitle == subTitle) &&
+            (identical(other.imgPath, imgPath) || other.imgPath == imgPath) &&
+            const DeepCollectionEquality().equals(other.greetings, greetings));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, name, title, subTitle, imgPath,
+      const DeepCollectionEquality().hash(greetings));
+
+  @override
+  String toString() {
+    return 'WelcomePageModel(name: $name, title: $title, subTitle: $subTitle, imgPath: $imgPath, greetings: $greetings)';
   }
 }
 
 /// @nodoc
-abstract class _$$_WelcomePageModelCopyWith<$Res>
-    implements $WelcomePageModelCopyWith<$Res> {
-  factory _$$_WelcomePageModelCopyWith(
-          _$_WelcomePageModel value, $Res Function(_$_WelcomePageModel) then) =
-      __$$_WelcomePageModelCopyWithImpl<$Res>;
-  @override
+abstract mixin class $WelcomePageModelCopyWith<$Res> {
+  factory $WelcomePageModelCopyWith(
+          WelcomePageModel value, $Res Function(WelcomePageModel) _then) =
+      _$WelcomePageModelCopyWithImpl;
   @useResult
   $Res call(
       {String name,
@@ -102,13 +67,15 @@ abstract class _$$_WelcomePageModelCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_WelcomePageModelCopyWithImpl<$Res>
-    extends _$WelcomePageModelCopyWithImpl<$Res, _$_WelcomePageModel>
-    implements _$$_WelcomePageModelCopyWith<$Res> {
-  __$$_WelcomePageModelCopyWithImpl(
-      _$_WelcomePageModel _value, $Res Function(_$_WelcomePageModel) _then)
-      : super(_value, _then);
+class _$WelcomePageModelCopyWithImpl<$Res>
+    implements $WelcomePageModelCopyWith<$Res> {
+  _$WelcomePageModelCopyWithImpl(this._self, this._then);
 
+  final WelcomePageModel _self;
+  final $Res Function(WelcomePageModel) _then;
+
+  /// Create a copy of WelcomePageModel
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -118,25 +85,25 @@ class __$$_WelcomePageModelCopyWithImpl<$Res>
     Object? imgPath = null,
     Object? greetings = null,
   }) {
-    return _then(_$_WelcomePageModel(
+    return _then(_self.copyWith(
       name: null == name
-          ? _value.name
+          ? _self.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
       title: null == title
-          ? _value.title
+          ? _self.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
       subTitle: null == subTitle
-          ? _value.subTitle
+          ? _self.subTitle
           : subTitle // ignore: cast_nullable_to_non_nullable
               as String,
       imgPath: null == imgPath
-          ? _value.imgPath
+          ? _self.imgPath
           : imgPath // ignore: cast_nullable_to_non_nullable
               as String,
       greetings: null == greetings
-          ? _value._greetings
+          ? _self.greetings
           : greetings // ignore: cast_nullable_to_non_nullable
               as List<String>,
     ));
@@ -145,8 +112,8 @@ class __$$_WelcomePageModelCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_WelcomePageModel extends _WelcomePageModel {
-  const _$_WelcomePageModel(
+class _WelcomePageModel extends WelcomePageModel {
+  const _WelcomePageModel(
       {required this.name,
       required this.title,
       required this.subTitle,
@@ -171,16 +138,19 @@ class _$_WelcomePageModel extends _WelcomePageModel {
     return EqualUnmodifiableListView(_greetings);
   }
 
+  /// Create a copy of WelcomePageModel
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  String toString() {
-    return 'WelcomePageModel(name: $name, title: $title, subTitle: $subTitle, imgPath: $imgPath, greetings: $greetings)';
-  }
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$WelcomePageModelCopyWith<_WelcomePageModel> get copyWith =>
+      __$WelcomePageModelCopyWithImpl<_WelcomePageModel>(this, _$identity);
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_WelcomePageModel &&
+            other is _WelcomePageModel &&
             (identical(other.name, name) || other.name == name) &&
             (identical(other.title, title) || other.title == title) &&
             (identical(other.subTitle, subTitle) ||
@@ -194,34 +164,70 @@ class _$_WelcomePageModel extends _WelcomePageModel {
   int get hashCode => Object.hash(runtimeType, name, title, subTitle, imgPath,
       const DeepCollectionEquality().hash(_greetings));
 
-  @JsonKey(ignore: true)
+  @override
+  String toString() {
+    return 'WelcomePageModel(name: $name, title: $title, subTitle: $subTitle, imgPath: $imgPath, greetings: $greetings)';
+  }
+}
+
+/// @nodoc
+abstract mixin class _$WelcomePageModelCopyWith<$Res>
+    implements $WelcomePageModelCopyWith<$Res> {
+  factory _$WelcomePageModelCopyWith(
+          _WelcomePageModel value, $Res Function(_WelcomePageModel) _then) =
+      __$WelcomePageModelCopyWithImpl;
+  @override
+  @useResult
+  $Res call(
+      {String name,
+      String title,
+      String subTitle,
+      String imgPath,
+      List<String> greetings});
+}
+
+/// @nodoc
+class __$WelcomePageModelCopyWithImpl<$Res>
+    implements _$WelcomePageModelCopyWith<$Res> {
+  __$WelcomePageModelCopyWithImpl(this._self, this._then);
+
+  final _WelcomePageModel _self;
+  final $Res Function(_WelcomePageModel) _then;
+
+  /// Create a copy of WelcomePageModel
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
-  _$$_WelcomePageModelCopyWith<_$_WelcomePageModel> get copyWith =>
-      __$$_WelcomePageModelCopyWithImpl<_$_WelcomePageModel>(this, _$identity);
+  $Res call({
+    Object? name = null,
+    Object? title = null,
+    Object? subTitle = null,
+    Object? imgPath = null,
+    Object? greetings = null,
+  }) {
+    return _then(_WelcomePageModel(
+      name: null == name
+          ? _self.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      title: null == title
+          ? _self.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      subTitle: null == subTitle
+          ? _self.subTitle
+          : subTitle // ignore: cast_nullable_to_non_nullable
+              as String,
+      imgPath: null == imgPath
+          ? _self.imgPath
+          : imgPath // ignore: cast_nullable_to_non_nullable
+              as String,
+      greetings: null == greetings
+          ? _self._greetings
+          : greetings // ignore: cast_nullable_to_non_nullable
+              as List<String>,
+    ));
+  }
 }
 
-abstract class _WelcomePageModel extends WelcomePageModel {
-  const factory _WelcomePageModel(
-      {required final String name,
-      required final String title,
-      required final String subTitle,
-      required final String imgPath,
-      required final List<String> greetings}) = _$_WelcomePageModel;
-  const _WelcomePageModel._() : super._();
-
-  @override
-  String get name;
-  @override
-  String get title;
-  @override
-  String get subTitle;
-  @override
-  String get imgPath;
-  @override
-  List<String> get greetings;
-  @override
-  @JsonKey(ignore: true)
-  _$$_WelcomePageModelCopyWith<_$_WelcomePageModel> get copyWith =>
-      throw _privateConstructorUsedError;
-}
+// dart format on

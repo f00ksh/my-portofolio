@@ -1,3 +1,4 @@
+// dart format width=80
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
@@ -9,90 +10,63 @@ part of 'web_page.model.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$WebPageModel {
-  IconData get icon => throw _privateConstructorUsedError;
-  String get title => throw _privateConstructorUsedError;
-  String get subTitle => throw _privateConstructorUsedError;
-  String get url => throw _privateConstructorUsedError;
+  IconData get icon;
+  String get title;
+  String get subTitle;
+  String get url;
 
-  @JsonKey(ignore: true)
-  $WebPageModelCopyWith<WebPageModel> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $WebPageModelCopyWith<$Res> {
-  factory $WebPageModelCopyWith(
-          WebPageModel value, $Res Function(WebPageModel) then) =
-      _$WebPageModelCopyWithImpl<$Res, WebPageModel>;
-  @useResult
-  $Res call({IconData icon, String title, String subTitle, String url});
-}
-
-/// @nodoc
-class _$WebPageModelCopyWithImpl<$Res, $Val extends WebPageModel>
-    implements $WebPageModelCopyWith<$Res> {
-  _$WebPageModelCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
+  /// Create a copy of WebPageModel
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @pragma('vm:prefer-inline')
+  $WebPageModelCopyWith<WebPageModel> get copyWith =>
+      _$WebPageModelCopyWithImpl<WebPageModel>(
+          this as WebPageModel, _$identity);
+
   @override
-  $Res call({
-    Object? icon = null,
-    Object? title = null,
-    Object? subTitle = null,
-    Object? url = null,
-  }) {
-    return _then(_value.copyWith(
-      icon: null == icon
-          ? _value.icon
-          : icon // ignore: cast_nullable_to_non_nullable
-              as IconData,
-      title: null == title
-          ? _value.title
-          : title // ignore: cast_nullable_to_non_nullable
-              as String,
-      subTitle: null == subTitle
-          ? _value.subTitle
-          : subTitle // ignore: cast_nullable_to_non_nullable
-              as String,
-      url: null == url
-          ? _value.url
-          : url // ignore: cast_nullable_to_non_nullable
-              as String,
-    ) as $Val);
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is WebPageModel &&
+            (identical(other.icon, icon) || other.icon == icon) &&
+            (identical(other.title, title) || other.title == title) &&
+            (identical(other.subTitle, subTitle) ||
+                other.subTitle == subTitle) &&
+            (identical(other.url, url) || other.url == url));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, icon, title, subTitle, url);
+
+  @override
+  String toString() {
+    return 'WebPageModel(icon: $icon, title: $title, subTitle: $subTitle, url: $url)';
   }
 }
 
 /// @nodoc
-abstract class _$$_WebPageModelCopyWith<$Res>
-    implements $WebPageModelCopyWith<$Res> {
-  factory _$$_WebPageModelCopyWith(
-          _$_WebPageModel value, $Res Function(_$_WebPageModel) then) =
-      __$$_WebPageModelCopyWithImpl<$Res>;
-  @override
+abstract mixin class $WebPageModelCopyWith<$Res> {
+  factory $WebPageModelCopyWith(
+          WebPageModel value, $Res Function(WebPageModel) _then) =
+      _$WebPageModelCopyWithImpl;
   @useResult
   $Res call({IconData icon, String title, String subTitle, String url});
 }
 
 /// @nodoc
-class __$$_WebPageModelCopyWithImpl<$Res>
-    extends _$WebPageModelCopyWithImpl<$Res, _$_WebPageModel>
-    implements _$$_WebPageModelCopyWith<$Res> {
-  __$$_WebPageModelCopyWithImpl(
-      _$_WebPageModel _value, $Res Function(_$_WebPageModel) _then)
-      : super(_value, _then);
+class _$WebPageModelCopyWithImpl<$Res> implements $WebPageModelCopyWith<$Res> {
+  _$WebPageModelCopyWithImpl(this._self, this._then);
 
+  final WebPageModel _self;
+  final $Res Function(WebPageModel) _then;
+
+  /// Create a copy of WebPageModel
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -101,21 +75,21 @@ class __$$_WebPageModelCopyWithImpl<$Res>
     Object? subTitle = null,
     Object? url = null,
   }) {
-    return _then(_$_WebPageModel(
+    return _then(_self.copyWith(
       icon: null == icon
-          ? _value.icon
+          ? _self.icon
           : icon // ignore: cast_nullable_to_non_nullable
               as IconData,
       title: null == title
-          ? _value.title
+          ? _self.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
       subTitle: null == subTitle
-          ? _value.subTitle
+          ? _self.subTitle
           : subTitle // ignore: cast_nullable_to_non_nullable
               as String,
       url: null == url
-          ? _value.url
+          ? _self.url
           : url // ignore: cast_nullable_to_non_nullable
               as String,
     ));
@@ -124,8 +98,8 @@ class __$$_WebPageModelCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_WebPageModel extends _WebPageModel {
-  const _$_WebPageModel(
+class _WebPageModel extends WebPageModel {
+  const _WebPageModel(
       {required this.icon,
       required this.title,
       required this.subTitle,
@@ -141,16 +115,19 @@ class _$_WebPageModel extends _WebPageModel {
   @override
   final String url;
 
+  /// Create a copy of WebPageModel
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  String toString() {
-    return 'WebPageModel(icon: $icon, title: $title, subTitle: $subTitle, url: $url)';
-  }
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$WebPageModelCopyWith<_WebPageModel> get copyWith =>
+      __$WebPageModelCopyWithImpl<_WebPageModel>(this, _$identity);
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_WebPageModel &&
+            other is _WebPageModel &&
             (identical(other.icon, icon) || other.icon == icon) &&
             (identical(other.title, title) || other.title == title) &&
             (identical(other.subTitle, subTitle) ||
@@ -161,31 +138,60 @@ class _$_WebPageModel extends _WebPageModel {
   @override
   int get hashCode => Object.hash(runtimeType, icon, title, subTitle, url);
 
-  @JsonKey(ignore: true)
+  @override
+  String toString() {
+    return 'WebPageModel(icon: $icon, title: $title, subTitle: $subTitle, url: $url)';
+  }
+}
+
+/// @nodoc
+abstract mixin class _$WebPageModelCopyWith<$Res>
+    implements $WebPageModelCopyWith<$Res> {
+  factory _$WebPageModelCopyWith(
+          _WebPageModel value, $Res Function(_WebPageModel) _then) =
+      __$WebPageModelCopyWithImpl;
+  @override
+  @useResult
+  $Res call({IconData icon, String title, String subTitle, String url});
+}
+
+/// @nodoc
+class __$WebPageModelCopyWithImpl<$Res>
+    implements _$WebPageModelCopyWith<$Res> {
+  __$WebPageModelCopyWithImpl(this._self, this._then);
+
+  final _WebPageModel _self;
+  final $Res Function(_WebPageModel) _then;
+
+  /// Create a copy of WebPageModel
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
-  _$$_WebPageModelCopyWith<_$_WebPageModel> get copyWith =>
-      __$$_WebPageModelCopyWithImpl<_$_WebPageModel>(this, _$identity);
+  $Res call({
+    Object? icon = null,
+    Object? title = null,
+    Object? subTitle = null,
+    Object? url = null,
+  }) {
+    return _then(_WebPageModel(
+      icon: null == icon
+          ? _self.icon
+          : icon // ignore: cast_nullable_to_non_nullable
+              as IconData,
+      title: null == title
+          ? _self.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      subTitle: null == subTitle
+          ? _self.subTitle
+          : subTitle // ignore: cast_nullable_to_non_nullable
+              as String,
+      url: null == url
+          ? _self.url
+          : url // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
 }
 
-abstract class _WebPageModel extends WebPageModel {
-  const factory _WebPageModel(
-      {required final IconData icon,
-      required final String title,
-      required final String subTitle,
-      required final String url}) = _$_WebPageModel;
-  const _WebPageModel._() : super._();
-
-  @override
-  IconData get icon;
-  @override
-  String get title;
-  @override
-  String get subTitle;
-  @override
-  String get url;
-  @override
-  @JsonKey(ignore: true)
-  _$$_WebPageModelCopyWith<_$_WebPageModel> get copyWith =>
-      throw _privateConstructorUsedError;
-}
+// dart format on

@@ -5,7 +5,7 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 part 'linkedin_page.model.freezed.dart';
 
 @freezed
-class LinkedinPageModel with _$LinkedinPageModel {
+abstract class LinkedinPageModel with _$LinkedinPageModel {
   const LinkedinPageModel._();
   const factory LinkedinPageModel({
     required IconData icon,

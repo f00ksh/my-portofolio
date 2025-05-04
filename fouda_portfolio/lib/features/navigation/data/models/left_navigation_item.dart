@@ -4,7 +4,7 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 part 'left_navigation_item.freezed.dart';
 
 @freezed
-class LeftNavigationItem with _$LeftNavigationItem {
+abstract class LeftNavigationItem with _$LeftNavigationItem {
   const factory LeftNavigationItem({
     required IconData icon,
     required String label,

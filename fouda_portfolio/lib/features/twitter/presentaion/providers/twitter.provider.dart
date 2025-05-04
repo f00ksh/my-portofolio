@@ -4,6 +4,6 @@ import 'package:riverpod_annotation/riverpod_annotation.dart';
 part 'twitter.provider.g.dart';
 
 @riverpod
-ITwitterRepository twitterRepository(TwitterRepositoryRef ref) {
+ITwitterRepository twitterRepository(ref) {
   return TwitterRepository(ref);
 }

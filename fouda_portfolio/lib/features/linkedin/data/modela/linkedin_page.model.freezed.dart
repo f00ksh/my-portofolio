@@ -1,3 +1,4 @@
+// dart format width=80
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
@@ -9,90 +10,64 @@ part of 'linkedin_page.model.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$LinkedinPageModel {
-  IconData get icon => throw _privateConstructorUsedError;
-  String get title => throw _privateConstructorUsedError;
-  String get subTitle => throw _privateConstructorUsedError;
-  String get url => throw _privateConstructorUsedError;
+  IconData get icon;
+  String get title;
+  String get subTitle;
+  String get url;
 
-  @JsonKey(ignore: true)
-  $LinkedinPageModelCopyWith<LinkedinPageModel> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $LinkedinPageModelCopyWith<$Res> {
-  factory $LinkedinPageModelCopyWith(
-          LinkedinPageModel value, $Res Function(LinkedinPageModel) then) =
-      _$LinkedinPageModelCopyWithImpl<$Res, LinkedinPageModel>;
-  @useResult
-  $Res call({IconData icon, String title, String subTitle, String url});
-}
-
-/// @nodoc
-class _$LinkedinPageModelCopyWithImpl<$Res, $Val extends LinkedinPageModel>
-    implements $LinkedinPageModelCopyWith<$Res> {
-  _$LinkedinPageModelCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
+  /// Create a copy of LinkedinPageModel
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @pragma('vm:prefer-inline')
+  $LinkedinPageModelCopyWith<LinkedinPageModel> get copyWith =>
+      _$LinkedinPageModelCopyWithImpl<LinkedinPageModel>(
+          this as LinkedinPageModel, _$identity);
+
   @override
-  $Res call({
-    Object? icon = null,
-    Object? title = null,
-    Object? subTitle = null,
-    Object? url = null,
-  }) {
-    return _then(_value.copyWith(
-      icon: null == icon
-          ? _value.icon
-          : icon // ignore: cast_nullable_to_non_nullable
-              as IconData,
-      title: null == title
-          ? _value.title
-          : title // ignore: cast_nullable_to_non_nullable
-              as String,
-      subTitle: null == subTitle
-          ? _value.subTitle
-          : subTitle // ignore: cast_nullable_to_non_nullable
-              as String,
-      url: null == url
-          ? _value.url
-          : url // ignore: cast_nullable_to_non_nullable
-              as String,
-    ) as $Val);
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is LinkedinPageModel &&
+            (identical(other.icon, icon) || other.icon == icon) &&
+            (identical(other.title, title) || other.title == title) &&
+            (identical(other.subTitle, subTitle) ||
+                other.subTitle == subTitle) &&
+            (identical(other.url, url) || other.url == url));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, icon, title, subTitle, url);
+
+  @override
+  String toString() {
+    return 'LinkedinPageModel(icon: $icon, title: $title, subTitle: $subTitle, url: $url)';
   }
 }
 
 /// @nodoc
-abstract class _$$_LinkedinPageModelCopyWith<$Res>
-    implements $LinkedinPageModelCopyWith<$Res> {
-  factory _$$_LinkedinPageModelCopyWith(_$_LinkedinPageModel value,
-          $Res Function(_$_LinkedinPageModel) then) =
-      __$$_LinkedinPageModelCopyWithImpl<$Res>;
-  @override
+abstract mixin class $LinkedinPageModelCopyWith<$Res> {
+  factory $LinkedinPageModelCopyWith(
+          LinkedinPageModel value, $Res Function(LinkedinPageModel) _then) =
+      _$LinkedinPageModelCopyWithImpl;
   @useResult
   $Res call({IconData icon, String title, String subTitle, String url});
 }
 
 /// @nodoc
-class __$$_LinkedinPageModelCopyWithImpl<$Res>
-    extends _$LinkedinPageModelCopyWithImpl<$Res, _$_LinkedinPageModel>
-    implements _$$_LinkedinPageModelCopyWith<$Res> {
-  __$$_LinkedinPageModelCopyWithImpl(
-      _$_LinkedinPageModel _value, $Res Function(_$_LinkedinPageModel) _then)
-      : super(_value, _then);
+class _$LinkedinPageModelCopyWithImpl<$Res>
+    implements $LinkedinPageModelCopyWith<$Res> {
+  _$LinkedinPageModelCopyWithImpl(this._self, this._then);
 
+  final LinkedinPageModel _self;
+  final $Res Function(LinkedinPageModel) _then;
+
+  /// Create a copy of LinkedinPageModel
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -101,21 +76,21 @@ class __$$_LinkedinPageModelCopyWithImpl<$Res>
     Object? subTitle = null,
     Object? url = null,
   }) {
-    return _then(_$_LinkedinPageModel(
+    return _then(_self.copyWith(
       icon: null == icon
-          ? _value.icon
+          ? _self.icon
           : icon // ignore: cast_nullable_to_non_nullable
               as IconData,
       title: null == title
-          ? _value.title
+          ? _self.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
       subTitle: null == subTitle
-          ? _value.subTitle
+          ? _self.subTitle
           : subTitle // ignore: cast_nullable_to_non_nullable
               as String,
       url: null == url
-          ? _value.url
+          ? _self.url
           : url // ignore: cast_nullable_to_non_nullable
               as String,
     ));
@@ -124,8 +99,8 @@ class __$$_LinkedinPageModelCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_LinkedinPageModel extends _LinkedinPageModel {
-  const _$_LinkedinPageModel(
+class _LinkedinPageModel extends LinkedinPageModel {
+  const _LinkedinPageModel(
       {required this.icon,
       required this.title,
       required this.subTitle,
@@ -141,16 +116,19 @@ class _$_LinkedinPageModel extends _LinkedinPageModel {
   @override
   final String url;
 
+  /// Create a copy of LinkedinPageModel
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  String toString() {
-    return 'LinkedinPageModel(icon: $icon, title: $title, subTitle: $subTitle, url: $url)';
-  }
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$LinkedinPageModelCopyWith<_LinkedinPageModel> get copyWith =>
+      __$LinkedinPageModelCopyWithImpl<_LinkedinPageModel>(this, _$identity);
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_LinkedinPageModel &&
+            other is _LinkedinPageModel &&
             (identical(other.icon, icon) || other.icon == icon) &&
             (identical(other.title, title) || other.title == title) &&
             (identical(other.subTitle, subTitle) ||
@@ -161,32 +139,60 @@ class _$_LinkedinPageModel extends _LinkedinPageModel {
   @override
   int get hashCode => Object.hash(runtimeType, icon, title, subTitle, url);
 
-  @JsonKey(ignore: true)
+  @override
+  String toString() {
+    return 'LinkedinPageModel(icon: $icon, title: $title, subTitle: $subTitle, url: $url)';
+  }
+}
+
+/// @nodoc
+abstract mixin class _$LinkedinPageModelCopyWith<$Res>
+    implements $LinkedinPageModelCopyWith<$Res> {
+  factory _$LinkedinPageModelCopyWith(
+          _LinkedinPageModel value, $Res Function(_LinkedinPageModel) _then) =
+      __$LinkedinPageModelCopyWithImpl;
+  @override
+  @useResult
+  $Res call({IconData icon, String title, String subTitle, String url});
+}
+
+/// @nodoc
+class __$LinkedinPageModelCopyWithImpl<$Res>
+    implements _$LinkedinPageModelCopyWith<$Res> {
+  __$LinkedinPageModelCopyWithImpl(this._self, this._then);
+
+  final _LinkedinPageModel _self;
+  final $Res Function(_LinkedinPageModel) _then;
+
+  /// Create a copy of LinkedinPageModel
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
-  _$$_LinkedinPageModelCopyWith<_$_LinkedinPageModel> get copyWith =>
-      __$$_LinkedinPageModelCopyWithImpl<_$_LinkedinPageModel>(
-          this, _$identity);
+  $Res call({
+    Object? icon = null,
+    Object? title = null,
+    Object? subTitle = null,
+    Object? url = null,
+  }) {
+    return _then(_LinkedinPageModel(
+      icon: null == icon
+          ? _self.icon
+          : icon // ignore: cast_nullable_to_non_nullable
+              as IconData,
+      title: null == title
+          ? _self.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      subTitle: null == subTitle
+          ? _self.subTitle
+          : subTitle // ignore: cast_nullable_to_non_nullable
+              as String,
+      url: null == url
+          ? _self.url
+          : url // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
 }
 
-abstract class _LinkedinPageModel extends LinkedinPageModel {
-  const factory _LinkedinPageModel(
-      {required final IconData icon,
-      required final String title,
-      required final String subTitle,
-      required final String url}) = _$_LinkedinPageModel;
-  const _LinkedinPageModel._() : super._();
-
-  @override
-  IconData get icon;
-  @override
-  String get title;
-  @override
-  String get subTitle;
-  @override
-  String get url;
-  @override
-  @JsonKey(ignore: true)
-  _$$_LinkedinPageModelCopyWith<_$_LinkedinPageModel> get copyWith =>
-      throw _privateConstructorUsedError;
-}
+// dart format on

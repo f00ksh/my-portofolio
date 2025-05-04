@@ -1,3 +1,4 @@
+// dart format width=80
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
@@ -9,90 +10,64 @@ part of 'github_page.model.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$GithubPageModel {
-  IconData get icon => throw _privateConstructorUsedError;
-  String get title => throw _privateConstructorUsedError;
-  String get subTitle => throw _privateConstructorUsedError;
-  String get url => throw _privateConstructorUsedError;
+  IconData get icon;
+  String get title;
+  String get subTitle;
+  String get url;
 
-  @JsonKey(ignore: true)
-  $GithubPageModelCopyWith<GithubPageModel> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $GithubPageModelCopyWith<$Res> {
-  factory $GithubPageModelCopyWith(
-          GithubPageModel value, $Res Function(GithubPageModel) then) =
-      _$GithubPageModelCopyWithImpl<$Res, GithubPageModel>;
-  @useResult
-  $Res call({IconData icon, String title, String subTitle, String url});
-}
-
-/// @nodoc
-class _$GithubPageModelCopyWithImpl<$Res, $Val extends GithubPageModel>
-    implements $GithubPageModelCopyWith<$Res> {
-  _$GithubPageModelCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
+  /// Create a copy of GithubPageModel
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @pragma('vm:prefer-inline')
+  $GithubPageModelCopyWith<GithubPageModel> get copyWith =>
+      _$GithubPageModelCopyWithImpl<GithubPageModel>(
+          this as GithubPageModel, _$identity);
+
   @override
-  $Res call({
-    Object? icon = null,
-    Object? title = null,
-    Object? subTitle = null,
-    Object? url = null,
-  }) {
-    return _then(_value.copyWith(
-      icon: null == icon
-          ? _value.icon
-          : icon // ignore: cast_nullable_to_non_nullable
-              as IconData,
-      title: null == title
-          ? _value.title
-          : title // ignore: cast_nullable_to_non_nullable
-              as String,
-      subTitle: null == subTitle
-          ? _value.subTitle
-          : subTitle // ignore: cast_nullable_to_non_nullable
-              as String,
-      url: null == url
-          ? _value.url
-          : url // ignore: cast_nullable_to_non_nullable
-              as String,
-    ) as $Val);
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is GithubPageModel &&
+            (identical(other.icon, icon) || other.icon == icon) &&
+            (identical(other.title, title) || other.title == title) &&
+            (identical(other.subTitle, subTitle) ||
+                other.subTitle == subTitle) &&
+            (identical(other.url, url) || other.url == url));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, icon, title, subTitle, url);
+
+  @override
+  String toString() {
+    return 'GithubPageModel(icon: $icon, title: $title, subTitle: $subTitle, url: $url)';
   }
 }
 
 /// @nodoc
-abstract class _$$_GithubPageModelCopyWith<$Res>
-    implements $GithubPageModelCopyWith<$Res> {
-  factory _$$_GithubPageModelCopyWith(
-          _$_GithubPageModel value, $Res Function(_$_GithubPageModel) then) =
-      __$$_GithubPageModelCopyWithImpl<$Res>;
-  @override
+abstract mixin class $GithubPageModelCopyWith<$Res> {
+  factory $GithubPageModelCopyWith(
+          GithubPageModel value, $Res Function(GithubPageModel) _then) =
+      _$GithubPageModelCopyWithImpl;
   @useResult
   $Res call({IconData icon, String title, String subTitle, String url});
 }
 
 /// @nodoc
-class __$$_GithubPageModelCopyWithImpl<$Res>
-    extends _$GithubPageModelCopyWithImpl<$Res, _$_GithubPageModel>
-    implements _$$_GithubPageModelCopyWith<$Res> {
-  __$$_GithubPageModelCopyWithImpl(
-      _$_GithubPageModel _value, $Res Function(_$_GithubPageModel) _then)
-      : super(_value, _then);
+class _$GithubPageModelCopyWithImpl<$Res>
+    implements $GithubPageModelCopyWith<$Res> {
+  _$GithubPageModelCopyWithImpl(this._self, this._then);
 
+  final GithubPageModel _self;
+  final $Res Function(GithubPageModel) _then;
+
+  /// Create a copy of GithubPageModel
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -101,21 +76,21 @@ class __$$_GithubPageModelCopyWithImpl<$Res>
     Object? subTitle = null,
     Object? url = null,
   }) {
-    return _then(_$_GithubPageModel(
+    return _then(_self.copyWith(
       icon: null == icon
-          ? _value.icon
+          ? _self.icon
           : icon // ignore: cast_nullable_to_non_nullable
               as IconData,
       title: null == title
-          ? _value.title
+          ? _self.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
       subTitle: null == subTitle
-          ? _value.subTitle
+          ? _self.subTitle
           : subTitle // ignore: cast_nullable_to_non_nullable
               as String,
       url: null == url
-          ? _value.url
+          ? _self.url
           : url // ignore: cast_nullable_to_non_nullable
               as String,
     ));
@@ -124,8 +99,8 @@ class __$$_GithubPageModelCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_GithubPageModel extends _GithubPageModel {
-  const _$_GithubPageModel(
+class _GithubPageModel extends GithubPageModel {
+  const _GithubPageModel(
       {required this.icon,
       required this.title,
       required this.subTitle,
@@ -141,16 +116,19 @@ class _$_GithubPageModel extends _GithubPageModel {
   @override
   final String url;
 
+  /// Create a copy of GithubPageModel
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  String toString() {
-    return 'GithubPageModel(icon: $icon, title: $title, subTitle: $subTitle, url: $url)';
-  }
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$GithubPageModelCopyWith<_GithubPageModel> get copyWith =>
+      __$GithubPageModelCopyWithImpl<_GithubPageModel>(this, _$identity);
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_GithubPageModel &&
+            other is _GithubPageModel &&
             (identical(other.icon, icon) || other.icon == icon) &&
             (identical(other.title, title) || other.title == title) &&
             (identical(other.subTitle, subTitle) ||
@@ -161,31 +139,60 @@ class _$_GithubPageModel extends _GithubPageModel {
   @override
   int get hashCode => Object.hash(runtimeType, icon, title, subTitle, url);
 
-  @JsonKey(ignore: true)
+  @override
+  String toString() {
+    return 'GithubPageModel(icon: $icon, title: $title, subTitle: $subTitle, url: $url)';
+  }
+}
+
+/// @nodoc
+abstract mixin class _$GithubPageModelCopyWith<$Res>
+    implements $GithubPageModelCopyWith<$Res> {
+  factory _$GithubPageModelCopyWith(
+          _GithubPageModel value, $Res Function(_GithubPageModel) _then) =
+      __$GithubPageModelCopyWithImpl;
+  @override
+  @useResult
+  $Res call({IconData icon, String title, String subTitle, String url});
+}
+
+/// @nodoc
+class __$GithubPageModelCopyWithImpl<$Res>
+    implements _$GithubPageModelCopyWith<$Res> {
+  __$GithubPageModelCopyWithImpl(this._self, this._then);
+
+  final _GithubPageModel _self;
+  final $Res Function(_GithubPageModel) _then;
+
+  /// Create a copy of GithubPageModel
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
-  _$$_GithubPageModelCopyWith<_$_GithubPageModel> get copyWith =>
-      __$$_GithubPageModelCopyWithImpl<_$_GithubPageModel>(this, _$identity);
+  $Res call({
+    Object? icon = null,
+    Object? title = null,
+    Object? subTitle = null,
+    Object? url = null,
+  }) {
+    return _then(_GithubPageModel(
+      icon: null == icon
+          ? _self.icon
+          : icon // ignore: cast_nullable_to_non_nullable
+              as IconData,
+      title: null == title
+          ? _self.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      subTitle: null == subTitle
+          ? _self.subTitle
+          : subTitle // ignore: cast_nullable_to_non_nullable
+              as String,
+      url: null == url
+          ? _self.url
+          : url // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
 }
 
-abstract class _GithubPageModel extends GithubPageModel {
-  const factory _GithubPageModel(
-      {required final IconData icon,
-      required final String title,
-      required final String subTitle,
-      required final String url}) = _$_GithubPageModel;
-  const _GithubPageModel._() : super._();
-
-  @override
-  IconData get icon;
-  @override
-  String get title;
-  @override
-  String get subTitle;
-  @override
-  String get url;
-  @override
-  @JsonKey(ignore: true)
-  _$$_GithubPageModelCopyWith<_$_GithubPageModel> get copyWith =>
-      throw _privateConstructorUsedError;
-}
+// dart format on

@@ -1,3 +1,4 @@
+// dart format width=80
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
@@ -9,89 +10,53 @@ part of 'twitter_page.model.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$TwitterPageModel {
-  IconData get icon => throw _privateConstructorUsedError;
-  String get title => throw _privateConstructorUsedError;
-  String get subTitle => throw _privateConstructorUsedError;
-  String get handle => throw _privateConstructorUsedError;
-  String get url => throw _privateConstructorUsedError;
+  IconData get icon;
+  String get title;
+  String get subTitle;
+  String get handle;
+  String get url;
 
-  @JsonKey(ignore: true)
-  $TwitterPageModelCopyWith<TwitterPageModel> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $TwitterPageModelCopyWith<$Res> {
-  factory $TwitterPageModelCopyWith(
-          TwitterPageModel value, $Res Function(TwitterPageModel) then) =
-      _$TwitterPageModelCopyWithImpl<$Res, TwitterPageModel>;
-  @useResult
-  $Res call(
-      {IconData icon,
-      String title,
-      String subTitle,
-      String handle,
-      String url});
-}
-
-/// @nodoc
-class _$TwitterPageModelCopyWithImpl<$Res, $Val extends TwitterPageModel>
-    implements $TwitterPageModelCopyWith<$Res> {
-  _$TwitterPageModelCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
+  /// Create a copy of TwitterPageModel
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @pragma('vm:prefer-inline')
+  $TwitterPageModelCopyWith<TwitterPageModel> get copyWith =>
+      _$TwitterPageModelCopyWithImpl<TwitterPageModel>(
+          this as TwitterPageModel, _$identity);
+
   @override
-  $Res call({
-    Object? icon = null,
-    Object? title = null,
-    Object? subTitle = null,
-    Object? handle = null,
-    Object? url = null,
-  }) {
-    return _then(_value.copyWith(
-      icon: null == icon
-          ? _value.icon
-          : icon // ignore: cast_nullable_to_non_nullable
-              as IconData,
-      title: null == title
-          ? _value.title
-          : title // ignore: cast_nullable_to_non_nullable
-              as String,
-      subTitle: null == subTitle
-          ? _value.subTitle
-          : subTitle // ignore: cast_nullable_to_non_nullable
-              as String,
-      handle: null == handle
-          ? _value.handle
-          : handle // ignore: cast_nullable_to_non_nullable
-              as String,
-      url: null == url
-          ? _value.url
-          : url // ignore: cast_nullable_to_non_nullable
-              as String,
-    ) as $Val);
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is TwitterPageModel &&
+            (identical(other.icon, icon) || other.icon == icon) &&
+            (identical(other.title, title) || other.title == title) &&
+            (identical(other.subTitle, subTitle) ||
+                other.subTitle == subTitle) &&
+            (identical(other.handle, handle) || other.handle == handle) &&
+            (identical(other.url, url) || other.url == url));
+  }
+
+  @override
+  int get hashCode =>
+      Object.hash(runtimeType, icon, title, subTitle, handle, url);
+
+  @override
+  String toString() {
+    return 'TwitterPageModel(icon: $icon, title: $title, subTitle: $subTitle, handle: $handle, url: $url)';
   }
 }
 
 /// @nodoc
-abstract class _$$_TwitterPageModelCopyWith<$Res>
-    implements $TwitterPageModelCopyWith<$Res> {
-  factory _$$_TwitterPageModelCopyWith(
-          _$_TwitterPageModel value, $Res Function(_$_TwitterPageModel) then) =
-      __$$_TwitterPageModelCopyWithImpl<$Res>;
-  @override
+abstract mixin class $TwitterPageModelCopyWith<$Res> {
+  factory $TwitterPageModelCopyWith(
+          TwitterPageModel value, $Res Function(TwitterPageModel) _then) =
+      _$TwitterPageModelCopyWithImpl;
   @useResult
   $Res call(
       {IconData icon,
@@ -102,13 +67,15 @@ abstract class _$$_TwitterPageModelCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_TwitterPageModelCopyWithImpl<$Res>
-    extends _$TwitterPageModelCopyWithImpl<$Res, _$_TwitterPageModel>
-    implements _$$_TwitterPageModelCopyWith<$Res> {
-  __$$_TwitterPageModelCopyWithImpl(
-      _$_TwitterPageModel _value, $Res Function(_$_TwitterPageModel) _then)
-      : super(_value, _then);
+class _$TwitterPageModelCopyWithImpl<$Res>
+    implements $TwitterPageModelCopyWith<$Res> {
+  _$TwitterPageModelCopyWithImpl(this._self, this._then);
 
+  final TwitterPageModel _self;
+  final $Res Function(TwitterPageModel) _then;
+
+  /// Create a copy of TwitterPageModel
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -118,25 +85,25 @@ class __$$_TwitterPageModelCopyWithImpl<$Res>
     Object? handle = null,
     Object? url = null,
   }) {
-    return _then(_$_TwitterPageModel(
+    return _then(_self.copyWith(
       icon: null == icon
-          ? _value.icon
+          ? _self.icon
           : icon // ignore: cast_nullable_to_non_nullable
               as IconData,
       title: null == title
-          ? _value.title
+          ? _self.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
       subTitle: null == subTitle
-          ? _value.subTitle
+          ? _self.subTitle
           : subTitle // ignore: cast_nullable_to_non_nullable
               as String,
       handle: null == handle
-          ? _value.handle
+          ? _self.handle
           : handle // ignore: cast_nullable_to_non_nullable
               as String,
       url: null == url
-          ? _value.url
+          ? _self.url
           : url // ignore: cast_nullable_to_non_nullable
               as String,
     ));
@@ -145,8 +112,8 @@ class __$$_TwitterPageModelCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_TwitterPageModel extends _TwitterPageModel {
-  const _$_TwitterPageModel(
+class _TwitterPageModel extends TwitterPageModel {
+  const _TwitterPageModel(
       {required this.icon,
       required this.title,
       required this.subTitle,
@@ -165,16 +132,19 @@ class _$_TwitterPageModel extends _TwitterPageModel {
   @override
   final String url;
 
+  /// Create a copy of TwitterPageModel
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  String toString() {
-    return 'TwitterPageModel(icon: $icon, title: $title, subTitle: $subTitle, handle: $handle, url: $url)';
-  }
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$TwitterPageModelCopyWith<_TwitterPageModel> get copyWith =>
+      __$TwitterPageModelCopyWithImpl<_TwitterPageModel>(this, _$identity);
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_TwitterPageModel &&
+            other is _TwitterPageModel &&
             (identical(other.icon, icon) || other.icon == icon) &&
             (identical(other.title, title) || other.title == title) &&
             (identical(other.subTitle, subTitle) ||
@@ -187,34 +157,70 @@ class _$_TwitterPageModel extends _TwitterPageModel {
   int get hashCode =>
       Object.hash(runtimeType, icon, title, subTitle, handle, url);
 
-  @JsonKey(ignore: true)
+  @override
+  String toString() {
+    return 'TwitterPageModel(icon: $icon, title: $title, subTitle: $subTitle, handle: $handle, url: $url)';
+  }
+}
+
+/// @nodoc
+abstract mixin class _$TwitterPageModelCopyWith<$Res>
+    implements $TwitterPageModelCopyWith<$Res> {
+  factory _$TwitterPageModelCopyWith(
+          _TwitterPageModel value, $Res Function(_TwitterPageModel) _then) =
+      __$TwitterPageModelCopyWithImpl;
+  @override
+  @useResult
+  $Res call(
+      {IconData icon,
+      String title,
+      String subTitle,
+      String handle,
+      String url});
+}
+
+/// @nodoc
+class __$TwitterPageModelCopyWithImpl<$Res>
+    implements _$TwitterPageModelCopyWith<$Res> {
+  __$TwitterPageModelCopyWithImpl(this._self, this._then);
+
+  final _TwitterPageModel _self;
+  final $Res Function(_TwitterPageModel) _then;
+
+  /// Create a copy of TwitterPageModel
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
-  _$$_TwitterPageModelCopyWith<_$_TwitterPageModel> get copyWith =>
-      __$$_TwitterPageModelCopyWithImpl<_$_TwitterPageModel>(this, _$identity);
+  $Res call({
+    Object? icon = null,
+    Object? title = null,
+    Object? subTitle = null,
+    Object? handle = null,
+    Object? url = null,
+  }) {
+    return _then(_TwitterPageModel(
+      icon: null == icon
+          ? _self.icon
+          : icon // ignore: cast_nullable_to_non_nullable
+              as IconData,
+      title: null == title
+          ? _self.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      subTitle: null == subTitle
+          ? _self.subTitle
+          : subTitle // ignore: cast_nullable_to_non_nullable
+              as String,
+      handle: null == handle
+          ? _self.handle
+          : handle // ignore: cast_nullable_to_non_nullable
+              as String,
+      url: null == url
+          ? _self.url
+          : url // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
 }
 
-abstract class _TwitterPageModel extends TwitterPageModel {
-  const factory _TwitterPageModel(
-      {required final IconData icon,
-      required final String title,
-      required final String subTitle,
-      required final String handle,
-      required final String url}) = _$_TwitterPageModel;
-  const _TwitterPageModel._() : super._();
-
-  @override
-  IconData get icon;
-  @override
-  String get title;
-  @override
-  String get subTitle;
-  @override
-  String get handle;
-  @override
-  String get url;
-  @override
-  @JsonKey(ignore: true)
-  _$$_TwitterPageModelCopyWith<_$_TwitterPageModel> get copyWith =>
-      throw _privateConstructorUsedError;
-}
+// dart format on

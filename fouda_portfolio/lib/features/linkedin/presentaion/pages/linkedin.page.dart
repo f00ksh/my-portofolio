@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:fouda_portfolio/features/linkedin/presentaion/responsiveness/linkedin_page_responsive.config.dart';
 import 'package:fouda_portfolio/features/linkedin/presentaion/viewmodels/linkedin.viewmodel.dart';
 import 'package:fouda_portfolio/helpers/responsive_ui_helper.dart';
+import 'package:fouda_portfolio/helpers/utils.dart';
 import 'package:fouda_portfolio/shared/widgets/error_notification.dart';
 import 'package:fouda_portfolio/styles/colors.dart';
 
@@ -51,7 +52,7 @@ class LinkedInPage extends ConsumerWidget {
                 cursor: SystemMouseCursors.click,
                 child: GestureDetector(
                   onTap: () {
-                    // Utils.launchUrlLink(data.url);
+                    Utils.launchUrlLink(data.url);
                   },
                   child: Container(
                     margin: uiConfig.buttonMargin,
@@ -69,10 +70,11 @@ class LinkedInPage extends ConsumerWidget {
             ]
                 .animate(interval: 100.ms)
                 .slideY(
-                    begin: 1,
-                    end: 0,
-                    duration: 0.5.seconds,
-                    curve: Curves.easeInOut)
+                  begin: 1,
+                  end: 0,
+                  duration: 0.5.seconds,
+                  curve: Curves.easeInOut,
+                )
                 .fadeIn(),
           ));
         });

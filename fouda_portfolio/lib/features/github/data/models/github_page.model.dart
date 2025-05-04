@@ -5,7 +5,7 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 part 'github_page.model.freezed.dart';
 
 @freezed
-class GithubPageModel with _$GithubPageModel {
+abstract class GithubPageModel with _$GithubPageModel {
   const GithubPageModel._();
   const factory GithubPageModel({
     required IconData icon,

@@ -5,7 +5,7 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 part 'twitter_page.model.freezed.dart';
 
 @freezed
-class TwitterPageModel with _$TwitterPageModel {
+abstract class TwitterPageModel with _$TwitterPageModel {
   const TwitterPageModel._();
   const factory TwitterPageModel({
     required IconData icon,

@@ -2,7 +2,7 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 part 'welcome_page.model.freezed.dart';
 
 @freezed
-class WelcomePageModel with _$WelcomePageModel {
+abstract class WelcomePageModel with _$WelcomePageModel {
   const WelcomePageModel._();
   const factory WelcomePageModel({
     required String name,

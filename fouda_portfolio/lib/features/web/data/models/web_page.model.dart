@@ -5,7 +5,7 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 part 'web_page.model.freezed.dart';
 
 @freezed
-class WebPageModel with _$WebPageModel {
+abstract class WebPageModel with _$WebPageModel {
   const WebPageModel._();
   const factory WebPageModel({
     required IconData icon,

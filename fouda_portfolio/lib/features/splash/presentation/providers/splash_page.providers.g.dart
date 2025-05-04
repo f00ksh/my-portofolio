@@ -22,6 +22,8 @@ final splashPageViewModelProvider =
   allTransitiveDependencies: null,
 );
 
+@Deprecated('Will be removed in 3.0. Use Ref instead')
+// ignore: unused_element
 typedef SplashPageViewModelRef = AutoDisposeProviderRef<SplashPageViewModel>;
 String _$splashPageFutureHash() => r'eeb2c6f6f01a05a878241f6baa8f6f4d25a54692';
 
@@ -37,6 +39,8 @@ final splashPageFutureProvider = AutoDisposeFutureProvider<bool>.internal(
   allTransitiveDependencies: null,
 );
 
+@Deprecated('Will be removed in 3.0. Use Ref instead')
+// ignore: unused_element
 typedef SplashPageFutureRef = AutoDisposeFutureProviderRef<bool>;
 // ignore_for_file: type=lint
-// ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member
+// ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package

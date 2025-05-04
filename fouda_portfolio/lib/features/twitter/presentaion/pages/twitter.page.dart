@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:fouda_portfolio/features/twitter/presentaion/responsiveness/twitter_page_responsive.config.dart';
 import 'package:fouda_portfolio/features/twitter/presentaion/viewmodels/twitter.viewmodel.dart';
 import 'package:fouda_portfolio/helpers/responsive_ui_helper.dart';
+import 'package:fouda_portfolio/helpers/utils.dart';
 import 'package:fouda_portfolio/shared/widgets/error_notification.dart';
 import 'package:fouda_portfolio/styles/colors.dart';
 
@@ -64,7 +65,7 @@ class TwitterPage extends ConsumerWidget {
                 cursor: SystemMouseCursors.click,
                 child: GestureDetector(
                   onTap: () {
-                    // Utils.launchUrlLink(data.url);
+                    Utils.launchUrlLink(data.url);
                   },
                   child: Container(
                     margin: uiConfig.buttonMargin,
